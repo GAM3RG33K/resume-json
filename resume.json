@@ -1,0 +1,301 @@
+{
+  "basics": {
+    "name": "Harshvardhan Joshi",
+    "label": "Mobile App Developer & Full Stack Developer",
+    "email": "contact@harshjoshi.dev",
+    "phone": "+91 9106975161",
+    "location": "Vadodara, India",
+    "url": "https://harshjoshi.dev/",
+    "picture": "https://drive.google.com/u/0/drive-viewer/AKGpihaK5jw7insFXI-Wf0qgaEF8ntBU5BRHBLdTGIUIAQD4uMwErVfM7Eeppce2bfMHQ8cJy98nS-2TZ8SZRxAmXUAMr6QnMpoRFX8=s2560",
+    "customFields": [
+      {
+        "name": "Portfolio PDF",
+        "value": "https://drive.google.com/file/d/1nmEHWGMidynaeSWm0MfHigqrYuOGh2OP/view"
+      }
+    ],
+    "profiles": [
+      {
+        "network": "X/Twitter",
+        "username": "decent_geek",
+        "url": "https://x.com/decent_geek"
+      },
+      {
+        "network": "Github",
+        "username": "GAM3RG33K",
+        "url": "https://github.com/GAM3RG33K"
+      },
+      {
+        "network": "Stackoverflow",
+        "username": "harshvardhan-joshi",
+        "url": "https://stackoverflow.com/users/8112679/harshvardhan-joshi"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "harshvardhan-joshi",
+        "url": "https://linkedin.com/in/harshvardhan-joshi"
+      }
+    ],
+    "summary": "Crafting exceptional mobile and web experiences with Flutter, NextJs, and React. Over 8+ years of experience delivering high-quality, performant apps on multiple platforms. Passionate about continuous learning and open source contributions.",
+    "headline": "Full Stack Developer | Flutter Expert | Active Open Source Contributor"
+  },
+  "skills": [
+    {
+      "name": "Flutter",
+      "description": "Expert in building cross-platform mobile applications with native integrations.",
+      "level": "9/10"
+    },
+    {
+      "name": "NextJs",
+      "description": "Developing modern, SEO-friendly web applications.",
+      "level": "8/10"
+    },
+    {
+      "name": "React",
+      "description": "Crafting responsive and dynamic frontend interfaces.",
+      "level": "8/10"
+    },
+    {
+      "name": "NodeJS",
+      "description": "Building scalable server-side applications and APIs.",
+      "level": "9/10"
+    },
+    {
+      "name": "Agile Methodologies",
+      "description": "Experienced in Agile, Scrum, and continuous integration practices.",
+      "level": "8/10"
+    }
+  ],
+  "apps": [
+    {
+      "name": "Exch - Currency Converter",
+      "description": "A modern currency converter providing real-time exchange rates for 150+ currencies, featuring a clean and minimalist interface with instant calculation updates and offline mode support. The web version is built with NextJs and the mobile version (currently in beta) is built with Flutter.",
+      "technologies": [
+        {
+          "name": "Flutter",
+          "description": "Expert in building cross-platform mobile applications with native integrations.",
+          "level": "9/10"
+        },
+        {
+          "name": "NextJs",
+          "description": "Developing modern, SEO-friendly web applications.",
+          "level": "8/10"
+        }
+      ],
+      "platforms": [
+        {
+          "name": "Web",
+          "type": "web",
+          "url": "https://exch.harshjoshi.dev/"
+        },
+        {
+          "name": "Mobile (Beta)",
+          "type": "android",
+          "url": "https://appdistribution.firebase.dev/i/dc114225c438ddb5/"
+        }
+      ],
+      "downloads": "N/A",
+      "link": "https://exch.harshjoshi.dev/",
+      "notes": "Mobile version built with Flutter is in beta testing stage."
+    },
+    {
+      "name": "Fortime Timer",
+      "description": "A comprehensive fitness/exercise timer app with multiple workout presets.",
+      "technologies": [
+        {
+          "name": "Flutter",
+          "description": "Expert in building cross-platform mobile applications with native integrations.",
+          "level": "9/10"
+        }
+      ],
+      "platforms": [
+        {
+          "name": "Android (beta)",
+          "type": "android",
+          "url": "https://appdistribution.firebase.dev/i/dc114225c438ddb5/"
+        },
+        {
+          "name": "iOS (beta)",
+          "type": "ios",
+          "url": "N/A"
+        }
+      ],
+      "downloads": "100+",
+      "link": "https://play.google.com/store/apps/details?id=app.fortime"
+    },
+    {
+      "name": "Solo for Creators",
+      "description": "A creators economy platform combining social media and product hunt features for content creators.",
+      "technologies": [
+        {
+          "name": "Flutter",
+          "description": "Expert in building cross-platform mobile applications with native integrations.",
+          "level": "9/10"
+        },
+        {
+          "name": "React",
+          "description": "Crafting responsive and dynamic frontend interfaces.",
+          "level": "8/10"
+        },
+        {
+          "name": "NodeJS",
+          "description": "Building scalable server-side applications and APIs.",
+          "level": "9/10"
+        }
+      ],
+      "platforms": [
+        {
+          "name": "Android",
+          "type": "android",
+          "url": "https://play.google.com/store/apps/details?id=app.solocreators.solo&hl=en-US"
+        },
+        {
+          "name": "iOS",
+          "type": "ios",
+          "url": "https://apps.apple.com/in/app/solo-for-creators/id6615079171"
+        },
+        {
+          "name": "Web",
+          "type": "web",
+          "url": "https://solocreators.app/"
+        }
+      ],
+      "downloads": "10k+",
+      "link": "https://play.google.com/store/apps/details?id=app.solocreators.solo&hl=en-US"
+    }
+  ],
+  "processes": [
+    {
+      "title": "Ideation & Planning",
+      "steps": [
+        "Requirements gathering and market research",
+        "User flow and action planning",
+        "Requirement finalization and setting milestones"
+      ]
+    },
+    {
+      "title": "Development",
+      "steps": [
+        "Architecture design and tech stack selection",
+        "Agile development with regular sprints and code reviews",
+        "Continuous testing and performance optimization"
+      ]
+    },
+    {
+      "title": "Launch & Growth",
+      "steps": [
+        "App store optimization and submission",
+        "Analytics integration and real-time monitoring",
+        "Rolling out crucial updates and hotfixes"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "company": "harshjoshi.dev",
+      "position": "Freelance Full Stack Developer",
+      "location": "Vadodara",
+      "date": "May 2024 - Present",
+      "summary": "Working on my own app, Exch - Currency Converter, as well as enhancing the Fortime Timer app and collaborating on various projects for Imagined Studios as a freelance full-stack developer.",
+      "url": "https://harshjoshi.dev/"
+    },
+    {
+      "company": "Imagined Studios",
+      "position": "Flutter Developer (Contract)",
+      "location": "Bengaluru",
+      "date": "November 2022 - Present",
+      "summary": "Working on the Solo for Creators Flutter app and revamping the internal recruitment job board using NextJs. Collaborating closely with cross-functional teams to deliver scalable solutions.",
+      "url": "https://imagined.studio"
+    },
+    {
+      "company": "Signzy Technologies",
+      "position": "SDE-3, Pod Lead",
+      "location": "Bengaluru",
+      "date": "March 2022 - May 2024",
+      "summary": "Led the 'GO Web & Mobile App' project from concept to deployment with a team of 5 full-stack developers. Integrated new features across sub-projects such as the Web App, Mobile App, Onboarding, Digital KYC, and more. Achievements include successful project delivery, team leadership, and driving technical direction with Flutter, React, and NodeJS.",
+      "url": "https://www.signzy.com/"
+    },
+    {
+      "company": "Rockers Technologies",
+      "position": "Lead Flutter Developer",
+      "location": "Vadodara",
+      "date": "December 2020 - March 2022",
+      "summary": "Led all Flutter client projects from concept to deployment, creating scalable Flutter apps and toolkits including QuickStart Flutter Login and E-commerce kits, among others. Key achievements include successful app deployments, enhanced user experience, and mentoring junior developers.",
+      "url": "https://www.rockersinfo.com/"
+    },
+    {
+      "company": "Proseon Technologies",
+      "position": "Senior Software Engineer (Mobile Team)",
+      "location": "Vadodara",
+      "date": "January 2017 - December 2020",
+      "summary": "Led the rebranding of the Investar India Mobile App by migrating from a native Android codebase to Flutter, ensuring full feature parity and iOS support. Achievements include successful app rebranding, significant feature enhancements, and process innovations such as developing creative solutions for dynamic widget rendering in Flutter.",
+      "url": "http://www.proseon.com/"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Parul Institute of Technology, Vadodara",
+      "studyType": "B.E.",
+      "area": "Computer Science and Engineering",
+      "score": "7.69/10",
+      "date": "June 2017"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Node.js and Express",
+      "issuer": "Coursera",
+      "date": "June-2024",
+      "summary": "",
+      "url": "https://www.coursera.org/account/accomplishments/verify/QHZMVRT6CP23"
+    },
+    {
+      "name": "React Js",
+      "issuer": "Coursera",
+      "date": "July-2024",
+      "summary": "",
+      "url": "https://www.coursera.org/account/accomplishments/verify/8F77PYGWKYAS"
+    },
+    {
+      "name": "Python",
+      "issuer": "Coursera",
+      "date": "June-2024",
+      "summary": "",
+      "url": "https://www.coursera.org/account/accomplishments/verify/KULQ2263DJDK"
+    },
+    {
+      "name": "Flutter ",
+      "issuer": "Coursera",
+      "date": "June-2024",
+      "summary": "",
+      "url": "https://www.coursera.org/account/accomplishments/verify/7M5MRMM8FH3Q"
+    },
+    {
+      "name": "Kotlin ",
+      "issuer": "Caster.io",
+      "date": "May-2020",
+      "summary": "",
+      "url": "https://drive.google.com/file/d/1kWTqzK0S12zLQGRMFkSNH4Y4wKaT_NzW/view?usp=sharing"
+    },
+    {
+      "name": "CI/CD",
+      "issuer": "LinkedIn",
+      "date": "June-2024",
+      "summary": "",
+      "url": "https://www.linkedin.com/learning/certificates/efd915e5890ab280186b11cefa50fbbeaedd5bcb9ea89fe832b5c19d687dd56b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BQxUVGw2kSvm4wi09n2Hzmg%3D%3D"
+    }
+  ],
+  "languages": [
+    {
+      "name": "English",
+      "level": "9/10"
+    },
+    {
+      "name": "Hindi",
+      "level": "10/10"
+    },
+    {
+      "name": "Gujarati",
+      "level": "10/10"
+    }
+  ]
+}
