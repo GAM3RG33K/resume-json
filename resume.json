@@ -75,6 +75,20 @@
       "start_year": 2017
     },
     {
+      "name": "TypeScript",
+      "description": "TypeScript (abbreviated as TS) is a free and open-source high-level programming language developed by Microsoft that adds static typing with optional type annotations to JavaScript. ",
+      "type": "core",
+      "level": 90,
+      "start_year": 2018
+    },
+    {
+      "name": "Python",
+      "description": "Expert in scripting using python to build tools, utility scripts and task automation",
+      "type": "core",
+      "level": 90,
+      "start_year": 2018
+    },
+    {
       "name": "Kotlin",
       "description": "App Development and Native implementations on android.",
       "type": "core",
@@ -103,11 +117,46 @@
       "start_year": 2017
     },
     {
+      "name": "Express.js",
+      "description": "Express.js, or simply Express, is a back end web application framework for building RESTful APIs with Node.js, released as free and open-source software under the MIT License.",
+      "type": "special",
+      "level": 90,
+      "start_year": 2024
+    },
+    {
       "name": "MongoDB",
       "description": "NoSQL database local/cloud, It is a document based database that is faster and scalable compared to most SQL based databases",
       "type": "special",
       "level": 75,
       "start_year": 2022
+    },
+    {
+      "name": "Ruby on Rails",
+      "description": "Rails is a web framework built for the Ruby programming language.",
+      "type": "special",
+      "level": 60,
+      "start_year": 2024
+    },
+    {
+      "name": "Flask (Python)",
+      "description": "Flask is a lightweight WSGI web application framework for Python programming language",
+      "type": "special",
+      "level": 60,
+      "start_year": 2024
+    },
+    {
+      "name": "Generative AI",
+      "description": "Generative artificial intelligence is a subset of artificial intelligence that uses generative models to produce text, images, videos, or other forms of data.",
+      "type": "special",
+      "level": 90,
+      "start_year": 2024
+    },
+    {
+      "name": "Prompt engineering",
+      "description": "Prompt engineering is the process of structuring or crafting an instruction in order to produce the best possible output from a generative artificial intelligence (AI) model.",
+      "type": "special",
+      "level": 75,
+      "start_year": 2024
     }
   ],
   "apps": [
