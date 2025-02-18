@@ -42,44 +42,73 @@
     {
       "name": "Flutter",
       "description": "Expert in building cross-platform mobile applications with native integrations.",
-      "level": "9/10"
+      "type": "core",
+      "level": 90,
+      "start_year": "2018"
     },
     {
       "name": "NextJs",
       "description": "Developing modern, SEO-friendly web applications.",
-      "level": "8/10"
+      "type": "core",
+      "level": 85,
+      "start_year": "2024"
     },
     {
       "name": "React",
       "description": "Crafting responsive and dynamic frontend interfaces.",
-      "level": "8/10"
+      "type": "core",
+      "level": 85,
+      "start_year": "2022"
     },
     {
       "name": "NodeJS",
       "description": "Building scalable server-side applications and APIs.",
-      "level": "9/10"
+      "type": "core",
+      "level": 90,
+      "start_year": "2022"
     },
     {
       "name": "Javascript",
       "description": "Expert in vanilla/plain JS to build static website, scripts and browser extensions",
-      "level": "9/10"
+      "type": "core",
+      "level": 90,
+      "start_year": "2017"
     },
     {
       "name": "Kotlin",
       "description": "App Development and Native implementations on android.",
-      "level": "8/10"
+      "type": "core",
+      "level": 85,
+      "start_year": "2017"
     },
     {
       "name": "Swift",
       "description": "App Development and Native implementations on iOS.",
-      "level": "7/10"
+      "type": "core",
+      "level": 75,
+      "start_year": "2018"
     },
     {
       "name": "Java SE/EE",
       "description": "Building scalable server-side applications and APIs.",
-      "level": "7/10"
+      "type": "core",
+      "level": 80,
+      "start_year": "2017"
+    },
+    {
+      "name": "Firebase",
+      "description": "Serverless Cloud platform, for Integration of Push messages, Realtime DB, App distribution, Analytics & Crashlytics",
+      "type": "special",
+      "level": 90,
+      "start_year": "2017"
+    },
+    {
+      "name": "MongoDB",
+      "description": "NoSQL database local/cloud, It is a document based database that is faster and scalable compared to most SQL based databases",
+      "type": "special",
+      "level": 75,
+      "start_year": "2022"
     }
-
   ],
   "apps": [
     {
