@@ -54,18 +54,11 @@
       "start_year": 2021
     },
     {
-      "name": "NextJs",
+      "name": "React/NextJs",
       "description": "Developing modern, SEO-friendly web applications.",
       "type": "core",
       "level": 85,
       "start_year": 2024
-    },
-    {
-      "name": "React",
-      "description": "Crafting responsive and dynamic frontend interfaces.",
-      "type": "core",
-      "level": 85,
-      "start_year": 2022
     },
     {
       "name": "NodeJS",
@@ -75,18 +68,11 @@
       "start_year": 2022
     },
     {
-      "name": "Javascript",
-      "description": "Expert in vanilla/plain JS to build static website, scripts and browser extensions",
+      "name": "Javascript/TypeScript",
+      "description": "Expert in vanilla/plain JS and TS to build static website, scripts and browser extensions",
       "type": "core",
       "level": 90,
       "start_year": 2017
-    },
-    {
-      "name": "TypeScript",
-      "description": "TypeScript (abbreviated as TS) is a free and open-source high-level programming language developed by Microsoft that adds static typing with optional type annotations to JavaScript. ",
-      "type": "core",
-      "level": 90,
-      "start_year": 2018
     },
     {
       "name": "Python",
