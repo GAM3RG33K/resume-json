@@ -58,7 +58,28 @@
       "name": "NodeJS",
       "description": "Building scalable server-side applications and APIs.",
       "level": "9/10"
+    },
+    {
+      "name": "Javascript",
+      "description": "Expert in vanilla/plain JS to build static website, scripts and browser extensions",
+      "level": "9/10"
+    },
+    {
+      "name": "Kotlin",
+      "description": "App Development and Native implementations on android.",
+      "level": "8/10"
+    },
+    {
+      "name": "Swift",
+      "description": "App Development and Native implementations on iOS.",
+      "level": "7/10"
+    },
+    {
+      "name": "Java SE/EE",
+      "description": "Building scalable server-side applications and APIs.",
+      "level": "7/10"
     }
+
   ],
   "apps": [
     {
@@ -83,12 +104,12 @@
           "url": "https://exch.harshjoshi.dev/"
         },
         {
-          "name": "Mobile (Beta)",
+          "name": "Android (Beta)",
           "type": "android",
           "url": "https://appdistribution.firebase.dev/i/dc114225c438ddb5/"
         }
       ],
-      "downloads": "N/A",
+      "downloads": "",
       "link": "https://exch.harshjoshi.dev/",
       "notes": "Mobile version built with Flutter is in beta testing stage."
     },
@@ -104,18 +125,18 @@
       ],
       "platforms": [
         {
-          "name": "Android (beta)",
+          "name": "Android",
           "type": "android",
-          "url": "https://appdistribution.firebase.dev/i/dc114225c438ddb5/"
+          "url": "https://play.google.com/store/apps/details?id=app.fortime"
         },
         {
-          "name": "iOS (beta)",
+          "name": "iOS",
           "type": "ios",
-          "url": "N/A"
+          "url": "https://apps.apple.com/us/app/fortime-workout-wod-timer/id6670213305"
         }
       ],
       "downloads": "100+",
-      "link": "https://play.google.com/store/apps/details?id=app.fortime"
+      "link": "https://knurlfitness.com/"
     },
     {
       "name": "Solo for Creators",
@@ -156,6 +177,181 @@
       ],
       "downloads": "10k+",
       "link": "https://play.google.com/store/apps/details?id=app.solocreators.solo&hl=en-US"
+    },
+    {
+      "name": "Investar Mobile",
+      "description": "Investar is a Live Indian Stock Market Software for Technical Analysis. It is beneficial to anyone interested in the Indian Stock Market, whether you are a Short-Term/Long-Term Trader, Day Trader, Technical Analyst, Broker, Chartered Accountant, or any other Individual Investor.",
+      "technologies": [
+        {
+          "name": "Flutter",
+          "description": "Expert in building cross-platform mobile applications with native integrations.",
+          "level": "9/10"
+        },
+        {
+          "name": "Java SE/EE",
+          "description": "Building scalable server-side applications and APIs.",
+          "level": "7/10"
+        }
+      ],
+      "platforms": [
+        {
+          "name": "Android",
+          "type": "android",
+          "url": "https://play.google.com/store/apps/details?id=org.InvestarMobile.androidapp"
+        },
+        {
+          "name": "iOS (discontinued)",
+          "type": "ios",
+          "url": "https://apps.apple.com/in/app/investar/id592347146"
+        }
+      ],
+      "downloads": "100k+",
+      "link": "https://investarindia.com/"
+    },
+    {
+      "name": "Equity Crowdfunding",
+      "description": "Equity crowdfunding offers the company’s securities to a number of potential investors in exchange for financing. Each investor is entitled to a stake in the company proportional to their investment.",
+      "technologies": [
+        {
+          "name": "Flutter",
+          "description": "Expert in building cross-platform mobile applications with native integrations.",
+          "level": "9/10"
+        }
+      ],
+      "platforms": [
+        {
+          "name": "Android",
+          "type": "android",
+          "url": "https://play.google.com/store/apps/details?id=com.rockers.equity"
+        }
+      ],
+      "downloads": "1000+",
+      "link": "https://play.google.com/store/apps/details?id=com.rockers.equity"
+    },
+    {
+      "name": "Real Estate Crowdfunding",
+      "description": "With the help of a Real Estate Crowdfunding app you can set up your own full-fledged portal wherein people can list new commercial or residential real estate projects, and investors from the public can review and opt to invest directly through the online crowdfunding portal approach or under the Crowdfunding DIY Approach.",
+      "technologies": [
+        {
+          "name": "Flutter",
+          "description": "Expert in building cross-platform mobile applications with native integrations.",
+          "level": "9/10"
+        }
+      ],
+      "platforms": [
+        {
+          "name": "Android",
+          "type": "android",
+          "url": "https://play.google.com/store/apps/details?id=com.rockersinfo.equity_real_estate"
+        }
+      ],
+      "downloads": "500+",
+      "link": "https://play.google.com/store/apps/details?id=com.rockersinfo.equity_real_estate"
+    },
+    {
+      "name": "AfroMoya Check-In App",
+      "description": "With this check-in app, event organisers can scan tickets and use multiple devices without worrying about the same ticket being used twice.",
+      "technologies": [
+        {
+          "name": "Flutter",
+          "description": "Expert in building cross-platform mobile applications with native integrations.",
+          "level": "9/10"
+        }
+      ],
+      "platforms": [
+        {
+          "name": "Android",
+          "type": "android",
+          "url": "https://play.google.com/store/apps/details?id=com.afromoya.androidapp"
+        }
+      ],
+      "downloads": "10+",
+      "link": "https://play.google.com/store/apps/details?id=com.afromoya.androidapp"
+    },
+    {
+      "name": "QuickStart Flutter Login & Registration App",
+      "description": "QuickStart is a nicely designed and developed multi purpose mobile application with Login & Registration as built-in modules. Flutter is an open-source mobile application development SDK created by Google and used to develop applications for Android and iOS.",
+      "technologies": [
+        {
+          "name": "Flutter",
+          "description": "Expert in building cross-platform mobile applications with native integrations.",
+          "level": "9/10"
+        }
+      ],
+      "platforms": [
+        {
+          "name": "Android",
+          "type": "android",
+          "url": ""
+        }
+      ],
+      "downloads": "",
+      "link": ""
+    },
+    {
+      "name": "QuickStart UI Kit for eCommerce",
+      "description": "QuickStart is the ultimate library of Flutter UI app templates composed of the best quality UI kit for mobile app developers (Android and iOS primarily). The bundle consists of app UI kits, full apps, and UI themes. This Flutter UI kit comes with dark and light mode. QuickStart flutter UI Kit is perfect for businesses like eCommerce store apps like clothes, grocery, electronics, Pet Care, Medicines, Jewellery, fashion accessories, and much more. QuickStart has a number of stunning ready-to-use widgets like scale transition and floating action buttons. Our QuickStart Flutter UI kit has built-in elements and styles based on Material Design Guidelines. Develop your stand-alone application with a neat and clean single code base for various platforms like Android, iOS & Web.",
+      "technologies": [
+        {
+          "name": "Flutter",
+          "description": "Expert in building cross-platform mobile applications with native integrations.",
+          "level": "9/10"
+        }
+      ],
+      "platforms": [
+        {
+          "name": "Android",
+          "type": "android",
+          "url": ""
+        }
+      ],
+      "downloads": "",
+      "link": ""
+    },
+    {
+      "name": "Flutter Settings Screen",
+      "description": "This is a simple flutter plugin for easily creating app settings screens. The unique thing about this library is that it is not dependent upon any specific storage library used to store settings.",
+      "technologies": [
+        {
+          "name": "Flutter",
+          "description": "Expert in building cross-platform mobile applications with native integrations.",
+          "level": "9/10"
+        }
+      ],
+      "platforms": [
+        {
+          "name": "Pub.dev",
+          "type": "pub",
+          "url": "https://pub.dev/packages/flutter_settings_screens"
+        }
+      ],
+      "downloads": "5.35k+",
+      "link": "https://pub.dev/packages/flutter_settings_screens"
+    },
+    {
+      "name": "To-discord",
+      "description": "To discord allows you to share all type of contents to added Discord channels directly from your browser tab. You can share contents like, Hyper links, embedded media, selected text or even the current tab's url.",
+      "technologies": [
+        {
+          "name": "Javascript",
+          "description": "Expert in vanilla/plain JS to build static website, scripts and browser extensions",
+          "level": "9/10"
+        }
+      ],
+      "platforms": [
+        {
+          "name": "Firefox",
+          "type": "web",
+          "url": "https://addons.mozilla.org/en-US/firefox/addon/to-discord/"
+        },
+        {
+          "name": "Chrome",
+          "type": "web",
+          "url": "https://chromewebstore.google.com/detail/to-discord/epcihifbffodmnbbnjgancnlodhbkhcl"
+        }
+      ],
+      "downloads": "1000+",
+      "link": "https://github.com/GAM3RG33K/ToDiscord"
     }
   ],
   "processes": [
