@@ -1,156 +1,577 @@
-'use client';
-
-import useResumeStore from "../stores/resumeStore";
-import AppLoader from "./AppLoader";
-
-// interface Skill {
-// 	name: string;
-// 	level: number;
-// }
-
-// const skills: Skill[] = [
-// 	{ name: 'React Native', level: 95 },
-// 	{ name: 'Swift', level: 90 },
-// 	{ name: 'Kotlin', level: 85 },
-// 	{ name: 'Flutter', level: 80 },
-// 	{ name: 'Firebase', level: 88 },
-// 	{ name: 'App Store Optimization', level: 85 },
-// ];
-
-const SkillsSection = () => {
-	const { resumeData } = useResumeStore();
-
-	if (!resumeData) {
-		return (
-			// <></>
-			<div className="flex items-center justify-center min-h-[80vh]">
-				<AppLoader />
-			</div>
-		);
-	}
-
-	const allSkills = resumeData.skills;
-
-	const coreSkills = allSkills.filter((skill) => skill.type === "core");
-	const specialSkills = allSkills.filter((skill) => skill.type === "special");
-	
-
-	const webSkills = ["NextJs", "React", "NodeJS", "Javascript", "TypeScript", ];
-	return (
-		<section className="py-16 md:py-20 section-skill">
-			<div className="container mx-auto px-4">
-				<h2 className="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4 text-center">Technical Expertise</h2>
-				<p className="text-sm sm:text-base text-gray-400 text-center mb-8 sm:mb-12 max-w-2xl mx-auto px-4">
-					Specialized in modern mobile development technologies and frameworks
-				</p>
-
-				<div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 max-w-5xl mx-auto">
-					{/* Core Technologies */}
-					<div className="space-y-4 sm:space-y-6 px-2">
-						<h3 className="text-lg sm:text-xl font-semibold mb-4 sm:mb-6 flex items-center gap-2">
-							<svg className="w-5 h-5 text-blue-400" viewBox="0 0 24 24" fill="currentColor">
-								<path d="M12,16L19.36,10.27L21,9L12,2L3,9L4.63,10.27M12,18.54L4.62,12.81L3,14.07L12,21.07L21,14.07L19.37,12.8L12,18.54Z" />
-							</svg>
-							Core Technologies
-						</h3>
-						{coreSkills.map((skill) => {
-							const currentYear = new Date().getFullYear();
-							const yoe = currentYear - (skill.start_year || currentYear);
-							return (
-								<div key={skill.name} className="group relative">
-									<div className="flex flex-wrap sm:flex-nowrap justify-between mb-2 gap-2">
-										<div className="flex flex-wrap sm:flex-nowrap items-center gap-2">
-											<span className="font-medium">{skill.name}</span>
-											{/* Skill-specific badges */}
-											<div className="flex flex-wrap sm:flex-nowrap gap-1">
-												{(skill.name === 'Flutter' || skill.name === 'React Native') && (
-													<span className="px-2 py-0.5 text-xs rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20">Cross-Platform</span>
-												)}
-												{skill.name === 'Swift' && (
-													<span className="px-2 py-0.5 text-xs rounded-full bg-orange-500/10 text-orange-400 border border-orange-500/20">iOS</span>
-												)}
-												{(skill.name === 'Kotlin' || skill.name === 'Java SE/EE') && (
-													<span className="px-2 py-0.5 text-xs rounded-full bg-green-500/10 text-green-400 border border-green-500/20">Android</span>
-												)}
-												{webSkills.includes(skill.name) && (
-													<span className="px-2 py-0.5 text-xs rounded-full bg-purple-500/10 text-purple-400 border border-purple-500/20">Web</span>
-												)}
-											</div>
-										</div>
-										<span className="text-blue-400 opacity-0 group-hover:opacity-100 transition-opacity">{skill.level}%</span>
-									</div>
-									<div className="h-2.5 bg-gray-700/50 rounded-full overflow-hidden backdrop-blur-sm relative">
-										<div
-											className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 transform origin-left transition-transform duration-1000 ease-out scale-x-0 group-hover:scale-x-100"
-											style={{ width: `${skill.level}%` }}
-										></div>
-										<div
-											className="h-full bg-gradient-to-r from-blue-500 to-purple-500 transform origin-left animate-expand"
-											style={{ width: `${skill.level}%` }}
-										></div>
-									</div>
-									{/* Hover Card with Details */}
-									<div className="hidden lg:block absolute left-full top-0 ml-4 w-48 p-3 rounded-lg bg-gray-800/90 backdrop-blur-sm opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-10 border border-gray-700/50">
-										<div className="text-sm space-y-2">
-											<p className="font-medium">{skill.name}</p>
-											<div className="space-y-1 text-xs text-gray-400">
-												<p>• {skill.level}% Proficiency</p>
-												<p>• {skill.level > 90 ? 'Expert' : skill.level > 80 ? 'Advanced' : 'Intermediate'} Level</p>
-												<p>• {yoe}+ Years Experience</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							);
-						})}
-					</div>
-
-					{/* Additional Skills */}
-					<div className="space-y-4 sm:space-y-6 px-2">
-						<h3 className="text-lg sm:text-xl font-semibold mb-4 sm:mb-6 flex items-center gap-2">
-							<svg className="w-5 h-5 text-purple-400" viewBox="0 0 24 24" fill="currentColor">
-								<path d="M12,0L3,7L4.63,8.27L12,14L19.36,8.27L21,7L12,0M19.37,10.73L12,16.47L4.62,10.73L3,12L12,19L21,12L19.37,10.73M19.37,15.73L12,21.47L4.62,15.73L3,17L12,24L21,17L19.37,15.73" />
-							</svg>
-							Specialized Skills
-						</h3>
-						<div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-							{specialSkills.map((skill) => (
-								<div
-									key={skill.name}
-									className="group bg-gray-800/30 backdrop-blur-sm p-4 rounded-xl border border-gray-700/50 hover:border-purple-500/50 transition-colors relative overflow-hidden"
-								>
-									<div className="relative z-10">
-										<h4 className="font-medium mb-2 break-words">{skill.name}</h4>
-										<div className="flex items-center gap-2">
-											<div className="flex-grow h-1.5 bg-gray-700/50 rounded-full overflow-hidden">
-												<div
-													className="h-full bg-gradient-to-r from-purple-500 to-blue-500 transform origin-left animate-expand"
-													style={{ width: `${skill.level}%` }}
-												></div>
-											</div>
-											<span className="text-sm text-purple-400 whitespace-nowrap">{skill.level}%</span>
-										</div>
-									</div>
-									{/* Decorative Background */}
-									<div className="absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity duration-500">
-										{skill.name.includes('Firebase') ? (
-											<svg className="absolute -right-4 -bottom-4 w-24 h-24 text-yellow-500 transform rotate-12" viewBox="0 0 24 24" fill="currentColor">
-												<path d="M3.89 15.672L6.255.461A.542.542 0 017.27.288l2.543 4.771zm16.794 3.692l-2.25-14a.54.54 0 00-.919-.295L3.316 19.365l7.856 4.427a1.621 1.621 0 001.588 0zM14.3 7.147l-1.82-3.482a.542.542 0 00-.96 0L3.53 17.984z" />
-											</svg>
-										) : (
-											<svg className="absolute -right-4 -bottom-4 w-24 h-24 transform rotate-12" viewBox="0 0 24 24" fill="currentColor">
-												<path d="M12,16L19.36,10.27L21,9L12,2L3,9L4.63,10.27M12,18.54L4.62,12.81L3,14.07L12,21.07L21,14.07L19.37,12.8L12,18.54Z" />
-											</svg>
-										)}
-									</div>
-								</div>
-							))}
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-	);
-};
-
-export default SkillsSection;
+{
+  "basics": {
+    "name": "Harshvardhan Joshi",
+    "label": "Mobile App Developer & Full Stack Developer",
+    "email": "contact@harshjoshi.dev",
+    "phone": "+91 9106975161",
+    "location": "Vadodara, India",
+    "url": "https://harshjoshi.dev/",
+    "picture": "https://drive.google.com/u/0/drive-viewer/AKGpihaK5jw7insFXI-Wf0qgaEF8ntBU5BRHBLdTGIUIAQD4uMwErVfM7Eeppce2bfMHQ8cJy98nS-2TZ8SZRxAmXUAMr6QnMpoRFX8=s2560",
+    "customFields": [
+      {
+        "name": "Portfolio PDF",
+        "value": "https://drive.google.com/file/d/1nmEHWGMidynaeSWm0MfHigqrYuOGh2OP/view"
+      }
+    ],
+    "profiles": [
+      {
+        "network": "X/Twitter",
+        "username": "decent_geek",
+        "url": "https://x.com/decent_geek"
+      },
+      {
+        "network": "Github",
+        "username": "GAM3RG33K",
+        "url": "https://github.com/GAM3RG33K"
+      },
+      {
+        "network": "Stackoverflow",
+        "username": "harshvardhan-joshi",
+        "url": "https://stackoverflow.com/users/8112679/harshvardhan-joshi"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "harshvardhan-joshi",
+        "url": "https://linkedin.com/in/harshvardhan-joshi"
+      }
+    ],
+    "summary": "Crafting exceptional mobile and web experiences with Flutter, NextJs, and React. Over 8+ years of experience delivering high-quality, performant apps on multiple platforms. Passionate about continuous learning and open source contributions.",
+    "headline": "Full Stack Developer | Flutter Expert | Active Open Source Contributor"
+  },
+  "skills": [
+    {
+      "name": "Flutter",
+      "description": "Expert in building cross-platform mobile applications with native integrations.",
+      "type": "core",
+      "level": 90,
+      "start_year": 2018
+    },
+    {
+      "name": "React Native",
+      "description": "React Native is an open-source UI software framework developed by Meta Platforms (formerly Facebook Inc.).It is used to develop applications for Android, Android TV, iOS, macOS, tvOS, Web, Windows and UWP by enabling developers to use the React framework along with native platform capabilities.",
+      "type": "core",
+      "level": 85,
+      "start_year": 2021
+    },
+    {
+      "name": "NextJs",
+      "description": "Developing modern, SEO-friendly web applications.",
+      "type": "core",
+      "level": 85,
+      "start_year": 2024
+    },
+    {
+      "name": "React",
+      "description": "Crafting responsive and dynamic frontend interfaces.",
+      "type": "core",
+      "level": 85,
+      "start_year": 2022
+    },
+    {
+      "name": "NodeJS",
+      "description": "Building scalable server-side applications and APIs.",
+      "type": "core",
+      "level": 90,
+      "start_year": 2022
+    },
+    {
+      "name": "Javascript",
+      "description": "Expert in vanilla/plain JS to build static website, scripts and browser extensions",
+      "type": "core",
+      "level": 90,
+      "start_year": 2017
+    },
+    {
+      "name": "TypeScript",
+      "description": "TypeScript (abbreviated as TS) is a free and open-source high-level programming language developed by Microsoft that adds static typing with optional type annotations to JavaScript. ",
+      "type": "core",
+      "level": 90,
+      "start_year": 2018
+    },
+    {
+      "name": "Python",
+      "description": "Expert in scripting using python to build tools, utility scripts and task automation",
+      "type": "core",
+      "level": 90,
+      "start_year": 2018
+    },
+    {
+      "name": "Kotlin",
+      "description": "App Development and Native implementations on android.",
+      "type": "core",
+      "level": 85,
+      "start_year": 2017
+    },
+    {
+      "name": "Swift",
+      "description": "App Development and Native implementations on iOS.",
+      "type": "core",
+      "level": 75,
+      "start_year": 2018
+    },
+    {
+      "name": "Java SE/EE",
+      "description": "Building scalable server-side and mobile applications and APIs.",
+      "type": "core",
+      "level": 80,
+      "start_year": 2017
+    },
+    {
+      "name": "Firebase",
+      "description": "Serverless Cloud platform, for Integration of Push messages, Realtime DB, App distribution, Analytics & Crashlytics",
+      "type": "special",
+      "level": 90,
+      "start_year": 2017
+    },
+    {
+      "name": "Express.js",
+      "description": "Express.js, or simply Express, is a back end web application framework for building RESTful APIs with Node.js, released as free and open-source software under the MIT License.",
+      "type": "special",
+      "level": 90,
+      "start_year": 2024
+    },
+    {
+      "name": "MongoDB",
+      "description": "NoSQL database local/cloud, It is a document based database that is faster and scalable compared to most SQL based databases",
+      "type": "special",
+      "level": 75,
+      "start_year": 2022
+    },
+    {
+      "name": "Ruby on Rails",
+      "description": "Rails is a web framework built for the Ruby programming language.",
+      "type": "special",
+      "level": 60,
+      "start_year": 2024
+    },
+    {
+      "name": "Flask (Python)",
+      "description": "Flask is a lightweight WSGI web application framework for Python programming language",
+      "type": "special",
+      "level": 60,
+      "start_year": 2024
+    },
+    {
+      "name": "Generative AI",
+      "description": "Generative artificial intelligence is a subset of artificial intelligence that uses generative models to produce text, images, videos, or other forms of data.",
+      "type": "special",
+      "level": 90,
+      "start_year": 2024
+    },
+    {
+      "name": "Prompt engineering",
+      "description": "Prompt engineering is the process of structuring or crafting an instruction in order to produce the best possible output from a generative artificial intelligence (AI) model.",
+      "type": "special",
+      "level": 75,
+      "start_year": 2024
+    }
+  ],
+  "apps": [
+    {
+      "name": "Exch - Currency Converter",
+      "description": "A modern currency converter providing real-time exchange rates for 150+ currencies, featuring a clean and minimalist interface with instant calculation updates and offline mode support. The web version is built with NextJs and the mobile version (currently in beta) is built with Flutter.",
+      "technologies": [
+        {
+          "name": "Flutter",
+          "description": "Expert in building cross-platform mobile applications with native integrations.",
+          "level": "9/10"
+        },
+        {
+          "name": "NextJs",
+          "description": "Developing modern, SEO-friendly web applications.",
+          "level": "8/10"
+        }
+      ],
+      "platforms": [
+        {
+          "name": "Web",
+          "type": "web",
+          "url": "https://exch.harshjoshi.dev/"
+        },
+        {
+          "name": "Android (Beta)",
+          "type": "android",
+          "url": "https://appdistribution.firebase.dev/i/dc114225c438ddb5/"
+        }
+      ],
+      "downloads": "",
+      "link": "https://exch.harshjoshi.dev/",
+      "notes": "Mobile version built with Flutter is in beta testing stage."
+    },
+    {
+      "name": "Fortime Timer",
+      "description": "A comprehensive fitness/exercise timer app with multiple workout presets.",
+      "technologies": [
+        {
+          "name": "Flutter",
+          "description": "Expert in building cross-platform mobile applications with native integrations.",
+          "level": "9/10"
+        }
+      ],
+      "platforms": [
+        {
+          "name": "Android",
+          "type": "android",
+          "url": "https://play.google.com/store/apps/details?id=app.fortime"
+        },
+        {
+          "name": "iOS",
+          "type": "ios",
+          "url": "https://apps.apple.com/us/app/fortime-workout-wod-timer/id6670213305"
+        }
+      ],
+      "downloads": "100+",
+      "link": "https://knurlfitness.com/"
+    },
+    {
+      "name": "Solo for Creators",
+      "description": "A creators economy platform combining social media and product hunt features for content creators.",
+      "technologies": [
+        {
+          "name": "Flutter",
+          "description": "Expert in building cross-platform mobile applications with native integrations.",
+          "level": "9/10"
+        },
+        {
+          "name": "React",
+          "description": "Crafting responsive and dynamic frontend interfaces.",
+          "level": "8/10"
+        },
+        {
+          "name": "NodeJS",
+          "description": "Building scalable server-side applications and APIs.",
+          "level": "9/10"
+        }
+      ],
+      "platforms": [
+        {
+          "name": "Android",
+          "type": "android",
+          "url": "https://play.google.com/store/apps/details?id=app.solocreators.solo&hl=en-US"
+        },
+        {
+          "name": "iOS",
+          "type": "ios",
+          "url": "https://apps.apple.com/in/app/solo-for-creators/id6615079171"
+        },
+        {
+          "name": "Web",
+          "type": "web",
+          "url": "https://solocreators.app/"
+        }
+      ],
+      "downloads": "10k+",
+      "link": "https://play.google.com/store/apps/details?id=app.solocreators.solo&hl=en-US"
+    },
+    {
+      "name": "Investar Mobile",
+      "description": "Investar is a Live Indian Stock Market Software for Technical Analysis. It is beneficial to anyone interested in the Indian Stock Market, whether you are a Short-Term/Long-Term Trader, Day Trader, Technical Analyst, Broker, Chartered Accountant, or any other Individual Investor.",
+      "technologies": [
+        {
+          "name": "Flutter",
+          "description": "Expert in building cross-platform mobile applications with native integrations.",
+          "level": "9/10"
+        },
+        {
+          "name": "Java SE/EE",
+          "description": "Building scalable server-side applications and APIs.",
+          "level": "7/10"
+        }
+      ],
+      "platforms": [
+        {
+          "name": "Android",
+          "type": "android",
+          "url": "https://play.google.com/store/apps/details?id=org.InvestarMobile.androidapp"
+        },
+        {
+          "name": "iOS (discontinued)",
+          "type": "ios",
+          "url": "https://apps.apple.com/in/app/investar/id592347146"
+        }
+      ],
+      "downloads": "100k+",
+      "link": "https://investarindia.com/"
+    },
+    {
+      "name": "Equity Crowdfunding",
+      "description": "Equity crowdfunding offers the company’s securities to a number of potential investors in exchange for financing. Each investor is entitled to a stake in the company proportional to their investment.",
+      "technologies": [
+        {
+          "name": "Flutter",
+          "description": "Expert in building cross-platform mobile applications with native integrations.",
+          "level": "9/10"
+        }
+      ],
+      "platforms": [
+        {
+          "name": "Android",
+          "type": "android",
+          "url": "https://play.google.com/store/apps/details?id=com.rockers.equity"
+        }
+      ],
+      "downloads": "1000+",
+      "link": "https://play.google.com/store/apps/details?id=com.rockers.equity"
+    },
+    {
+      "name": "Real Estate Crowdfunding",
+      "description": "With the help of a Real Estate Crowdfunding app you can set up your own full-fledged portal wherein people can list new commercial or residential real estate projects, and investors from the public can review and opt to invest directly through the online crowdfunding portal approach or under the Crowdfunding DIY Approach.",
+      "technologies": [
+        {
+          "name": "Flutter",
+          "description": "Expert in building cross-platform mobile applications with native integrations.",
+          "level": "9/10"
+        }
+      ],
+      "platforms": [
+        {
+          "name": "Android",
+          "type": "android",
+          "url": "https://play.google.com/store/apps/details?id=com.rockersinfo.equity_real_estate"
+        }
+      ],
+      "downloads": "500+",
+      "link": "https://play.google.com/store/apps/details?id=com.rockersinfo.equity_real_estate"
+    },
+    {
+      "name": "AfroMoya Check-In App",
+      "description": "With this check-in app, event organisers can scan tickets and use multiple devices without worrying about the same ticket being used twice.",
+      "technologies": [
+        {
+          "name": "Flutter",
+          "description": "Expert in building cross-platform mobile applications with native integrations.",
+          "level": "9/10"
+        }
+      ],
+      "platforms": [
+        {
+          "name": "Android",
+          "type": "android",
+          "url": "https://play.google.com/store/apps/details?id=com.afromoya.androidapp"
+        }
+      ],
+      "downloads": "10+",
+      "link": "https://play.google.com/store/apps/details?id=com.afromoya.androidapp"
+    },
+    {
+      "name": "QuickStart Flutter Login & Registration App",
+      "description": "QuickStart is a nicely designed and developed multi purpose mobile application with Login & Registration as built-in modules. Flutter is an open-source mobile application development SDK created by Google and used to develop applications for Android and iOS.",
+      "technologies": [
+        {
+          "name": "Flutter",
+          "description": "Expert in building cross-platform mobile applications with native integrations.",
+          "level": "9/10"
+        }
+      ],
+      "platforms": [
+        {
+          "name": "Android",
+          "type": "android",
+          "url": ""
+        }
+      ],
+      "downloads": "",
+      "link": ""
+    },
+    {
+      "name": "QuickStart UI Kit for eCommerce",
+      "description": "QuickStart is the ultimate library of Flutter UI app templates composed of the best quality UI kit for mobile app developers (Android and iOS primarily). The bundle consists of app UI kits, full apps, and UI themes. This Flutter UI kit comes with dark and light mode. QuickStart flutter UI Kit is perfect for businesses like eCommerce store apps like clothes, grocery, electronics, Pet Care, Medicines, Jewellery, fashion accessories, and much more. QuickStart has a number of stunning ready-to-use widgets like scale transition and floating action buttons. Our QuickStart Flutter UI kit has built-in elements and styles based on Material Design Guidelines. Develop your stand-alone application with a neat and clean single code base for various platforms like Android, iOS & Web.",
+      "technologies": [
+        {
+          "name": "Flutter",
+          "description": "Expert in building cross-platform mobile applications with native integrations.",
+          "level": "9/10"
+        }
+      ],
+      "platforms": [
+        {
+          "name": "Android",
+          "type": "android",
+          "url": ""
+        }
+      ],
+      "downloads": "",
+      "link": ""
+    },
+    {
+      "name": "Flutter Settings Screen",
+      "description": "This is a simple flutter plugin for easily creating app settings screens. The unique thing about this library is that it is not dependent upon any specific storage library used to store settings.",
+      "technologies": [
+        {
+          "name": "Flutter",
+          "description": "Expert in building cross-platform mobile applications with native integrations.",
+          "level": "9/10"
+        }
+      ],
+      "platforms": [
+        {
+          "name": "Pub.dev",
+          "type": "pub",
+          "url": "https://pub.dev/packages/flutter_settings_screens"
+        }
+      ],
+      "downloads": "5.35k+",
+      "link": "https://pub.dev/packages/flutter_settings_screens"
+    },
+    {
+      "name": "To-discord",
+      "description": "To discord allows you to share all type of contents to added Discord channels directly from your browser tab. You can share contents like, Hyper links, embedded media, selected text or even the current tab's url.",
+      "technologies": [
+        {
+          "name": "Javascript",
+          "description": "Expert in vanilla/plain JS to build static website, scripts and browser extensions",
+          "level": "9/10"
+        }
+      ],
+      "platforms": [
+        {
+          "name": "Firefox",
+          "type": "web",
+          "url": "https://addons.mozilla.org/en-US/firefox/addon/to-discord/"
+        },
+        {
+          "name": "Chrome",
+          "type": "web",
+          "url": "https://chromewebstore.google.com/detail/to-discord/epcihifbffodmnbbnjgancnlodhbkhcl"
+        }
+      ],
+      "downloads": "1000+",
+      "link": "https://github.com/GAM3RG33K/ToDiscord"
+    }
+  ],
+  "processes": [
+    {
+      "title": "Ideation & Planning",
+      "steps": [
+        "Requirements gathering and market research",
+        "User flow and action planning",
+        "Requirement finalization and setting milestones"
+      ]
+    },
+    {
+      "title": "Development",
+      "steps": [
+        "Architecture design and tech stack selection",
+        "Agile development with regular sprints and code reviews",
+        "Continuous testing and performance optimization"
+      ]
+    },
+    {
+      "title": "Launch & Growth",
+      "steps": [
+        "App store optimization and submission",
+        "Analytics integration and real-time monitoring",
+        "Rolling out crucial updates and hotfixes"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "company": "harshjoshi.dev",
+      "position": "Freelance Full Stack Developer",
+      "location": "Vadodara",
+      "date": "May 2024 - Present",
+      "summary": "Working on my own app, Exch - Currency Converter, as well as enhancing the Fortime Timer app and collaborating on various projects for Imagined Studios as a freelance full-stack developer.",
+      "url": "https://harshjoshi.dev/"
+    },
+    {
+      "company": "Imagined Studios",
+      "position": "Flutter Developer (Contract)",
+      "location": "Bengaluru",
+      "date": "November 2022 - Present",
+      "summary": "Working on the Solo for Creators Flutter app and revamping the internal recruitment job board using NextJs. Collaborating closely with cross-functional teams to deliver scalable solutions.",
+      "url": "https://imagined.studio"
+    },
+    {
+      "company": "Signzy Technologies",
+      "position": "SDE-3, Pod Lead",
+      "location": "Bengaluru",
+      "date": "March 2022 - May 2024",
+      "summary": "Led the 'GO Web & Mobile App' project from concept to deployment with a team of 5 full-stack developers. Integrated new features across sub-projects such as the Web App, Mobile App, Onboarding, Digital KYC, and more. Achievements include successful project delivery, team leadership, and driving technical direction with Flutter, React, and NodeJS.",
+      "url": "https://www.signzy.com/"
+    },
+    {
+      "company": "Rockers Technologies",
+      "position": "Lead Flutter Developer",
+      "location": "Vadodara",
+      "date": "December 2020 - March 2022",
+      "summary": "Led all Flutter client projects from concept to deployment, creating scalable Flutter apps and toolkits including QuickStart Flutter Login and E-commerce kits, among others. Key achievements include successful app deployments, enhanced user experience, and mentoring junior developers.",
+      "url": "https://www.rockersinfo.com/"
+    },
+    {
+      "company": "Proseon Technologies",
+      "position": "Senior Software Engineer (Mobile Team)",
+      "location": "Vadodara",
+      "date": "January 2017 - December 2020",
+      "summary": "Led the rebranding of the Investar India Mobile App by migrating from a native Android codebase to Flutter, ensuring full feature parity and iOS support. Achievements include successful app rebranding, significant feature enhancements, and process innovations such as developing creative solutions for dynamic widget rendering in Flutter.",
+      "url": "http://www.proseon.com/"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Parul Institute of Technology, Vadodara",
+      "studyType": "B.E.",
+      "area": "Computer Science and Engineering",
+      "score": "7.69/10",
+      "date": "June 2017"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Node.js and Express",
+      "issuer": "Coursera",
+      "date": "June-2024",
+      "summary": "",
+      "url": "https://www.coursera.org/account/accomplishments/verify/QHZMVRT6CP23"
+    },
+    {
+      "name": "React Js",
+      "issuer": "Coursera",
+      "date": "July-2024",
+      "summary": "",
+      "url": "https://www.coursera.org/account/accomplishments/verify/8F77PYGWKYAS"
+    },
+    {
+      "name": "Python",
+      "issuer": "Coursera",
+      "date": "June-2024",
+      "summary": "",
+      "url": "https://www.coursera.org/account/accomplishments/verify/KULQ2263DJDK"
+    },
+    {
+      "name": "Flutter ",
+      "issuer": "Coursera",
+      "date": "June-2024",
+      "summary": "",
+      "url": "https://www.coursera.org/account/accomplishments/verify/7M5MRMM8FH3Q"
+    },
+    {
+      "name": "Kotlin ",
+      "issuer": "Caster.io",
+      "date": "May-2020",
+      "summary": "",
+      "url": "https://drive.google.com/file/d/1kWTqzK0S12zLQGRMFkSNH4Y4wKaT_NzW/view?usp=sharing"
+    },
+    {
+      "name": "CI/CD",
+      "issuer": "LinkedIn",
+      "date": "June-2024",
+      "summary": "",
+      "url": "https://www.linkedin.com/learning/certificates/efd915e5890ab280186b11cefa50fbbeaedd5bcb9ea89fe832b5c19d687dd56b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BQxUVGw2kSvm4wi09n2Hzmg%3D%3D"
+    }
+  ],
+  "languages": [
+    {
+      "name": "English",
+      "level": "9/10"
+    },
+    {
+      "name": "Hindi",
+      "level": "10/10"
+    },
+    {
+      "name": "Gujarati",
+      "level": "10/10"
+    }
+  ]
+}
