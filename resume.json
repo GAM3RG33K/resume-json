@@ -47,6 +47,13 @@
       "start_year": 2018
     },
     {
+      "name": "React Native",
+      "description": "React Native is an open-source UI software framework developed by Meta Platforms (formerly Facebook Inc.).It is used to develop applications for Android, Android TV, iOS, macOS, tvOS, Web, Windows and UWP by enabling developers to use the React framework along with native platform capabilities.",
+      "type": "core",
+      "level": 85,
+      "start_year": 2021
+    },
+    {
       "name": "NextJs",
       "description": "Developing modern, SEO-friendly web applications.",
       "type": "core",
