@@ -425,6 +425,32 @@
       "link": "https://github.com/GAM3RG33K/ToDiscord"
     }
   ],
+  "testimonials": [
+    {
+      "name": "Donn F.",
+      "project": "Fortime Timer",
+      "review": "If you're looking for a Flutter dev for a project you're working on, I highly recommend Harshvardhan Joshi 💯.\nHe did a fantastic job with me on a timer app I recently released in beta (knurlfitness.com). He's very knowledgable about Flutter, he's very responsive, & attentive to detail. I really enjoyed working with him on this project. If you need some Flutter/etc help, hit him up. 🚀",
+      "link": "https://www.linkedin.com/posts/donnfelker_fortime-a-free-workout-timer-for-functional-activity-7251621500321968130-ayuJ"
+    },
+    {
+      "name": "Kalpesh K.",
+      "project": "Investar India (Mobile App)",
+      "review": "Harshvardhan is the first person I reach out to if I want to have some deep technical discussions, this guy is always up to date with cutting-edge tech. \nHis standard of work is so high that it always keeps me inspired. Harsh is definitely the must-have asset especially when the project being built has some deep research involved. \nWe have worked for a long time in the same team and I consider myself privileged that I got to work with him, being in the same team made my learning really quick. \nAs a leader too Harsh is really good and his juniors have learned a lot from him. I would definitely want to work with him again. Good luck Man, keep rocking!! :)",
+      "link": "https://www.linkedin.com/in/harshvardhan-joshi/details/recommendations"
+    },
+    {
+      "name": "Himanshu T.",
+      "project": "Global Onboarding Project - Signzy",
+      "review": "Great mentor, has great skill in flutter and was always a go to person in all of my flutter needs. We have completed some awesome challenging task in mobile team together.",
+      "link": "https://www.linkedin.com/in/harshvardhan-joshi/details/recommendations"
+    },
+    {
+      "name": "Avinash N.",
+      "project": "Global Onboarding Project - Signzy",
+      "review": "I had the pleasure of working with Harsh on several projects where he excelled as a Mobile Developer. Harsh's expertise in Flutter and mobile app development is exceptional, and his ability to build entire applications from scratch is truly impressive.\nNot only is Harsh technically skilled, but he also has a deep understanding of product requirements and user experience. He seamlessly bridges the gap between technical execution and business needs, ensuring that the final product is both robust and user-friendly. His ability to work independently while delivering high-quality solutions makes him a standout professional in the field. \nHarsh is a dedicated and talented individual, and I wouldn't hesitate to recommend him for any challenging mobile development projects. He is an asset to any team!",
+      "link": "https://www.linkedin.com/in/harshvardhan-joshi/details/recommendations"
+    }
+  ],
   "processes": [
     {
       "title": "Ideation & Planning",
