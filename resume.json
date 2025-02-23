@@ -4,7 +4,7 @@
     "label": "Mobile App Developer & Full Stack Developer",
     "email": "contact@harshjoshi.dev",
     "phone": "+91 9106975161",
-    "career_start_year": 2017, 
+    "career_start_year": 2017,
     "location": "Vadodara, India",
     "url": "https://harshjoshi.dev/",
     "picture": "https://drive.google.com/u/0/drive-viewer/AKGpihaK5jw7insFXI-Wf0qgaEF8ntBU5BRHBLdTGIUIAQD4uMwErVfM7Eeppce2bfMHQ8cJy98nS-2TZ8SZRxAmXUAMr6QnMpoRFX8=s2560",
@@ -531,6 +531,20 @@
   ],
   "certifications": [
     {
+      "name": "Flutter ",
+      "issuer": "Coursera",
+      "date": "June-2024",
+      "summary": "",
+      "url": "https://www.coursera.org/account/accomplishments/verify/7M5MRMM8FH3Q"
+    },
+    {
+      "name": "Next.js",
+      "issuer": "Coursera",
+      "date": "July-2024",
+      "summary": "",
+      "url": "https://www.coursera.org/account/accomplishments/verify/RU2LMYPMFCC6"
+    },
+    {
       "name": "Node.js and Express",
       "issuer": "Coursera",
       "date": "June-2024",
@@ -550,13 +564,6 @@
       "date": "June-2024",
       "summary": "",
       "url": "https://www.coursera.org/account/accomplishments/verify/KULQ2263DJDK"
-    },
-    {
-      "name": "Flutter ",
-      "issuer": "Coursera",
-      "date": "June-2024",
-      "summary": "",
-      "url": "https://www.coursera.org/account/accomplishments/verify/7M5MRMM8FH3Q"
     },
     {
       "name": "Kotlin ",
