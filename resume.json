@@ -157,6 +157,7 @@
     {
       "name": "Exch - Currency Converter",
       "description": "A modern currency converter providing real-time exchange rates for 150+ currencies, featuring a clean and minimalist interface with instant calculation updates and offline mode support. The web version is built with NextJs and the mobile version (currently in beta) is built with Flutter.",
+      "image": "exch-logo.png",
       "technologies": [
         {
           "name": "Flutter",
@@ -188,6 +189,7 @@
     {
       "name": "Fortime Timer",
       "description": "A comprehensive fitness/exercise timer app with multiple workout presets.",
+      "image": "fortime-logo.png",
       "technologies": [
         {
           "name": "Flutter",
@@ -212,6 +214,7 @@
     },
     {
       "name": "Solo for Creators",
+      "image": "solo-logo.png",
       "description": "A creators economy platform combining social media and product hunt features for content creators.",
       "technologies": [
         {
@@ -252,6 +255,7 @@
     },
     {
       "name": "Investar Mobile",
+      "image": "investar-logo.png",
       "description": "Investar is a Live Indian Stock Market Software for Technical Analysis. It is beneficial to anyone interested in the Indian Stock Market, whether you are a Short-Term/Long-Term Trader, Day Trader, Technical Analyst, Broker, Chartered Accountant, or any other Individual Investor.",
       "technologies": [
         {
@@ -282,6 +286,7 @@
     },
     {
       "name": "Equity Crowdfunding",
+      "image": "equity-logo.png",
       "description": "Equity crowdfunding offers the company’s securities to a number of potential investors in exchange for financing. Each investor is entitled to a stake in the company proportional to their investment.",
       "technologies": [
         {
@@ -302,6 +307,7 @@
     },
     {
       "name": "Real Estate Crowdfunding",
+      "image": "real-estate-logo.png",
       "description": "With the help of a Real Estate Crowdfunding app you can set up your own full-fledged portal wherein people can list new commercial or residential real estate projects, and investors from the public can review and opt to invest directly through the online crowdfunding portal approach or under the Crowdfunding DIY Approach.",
       "technologies": [
         {
@@ -322,6 +328,7 @@
     },
     {
       "name": "AfroMoya Check-In App",
+      "image": "afromoya-logo.png",
       "description": "With this check-in app, event organisers can scan tickets and use multiple devices without worrying about the same ticket being used twice.",
       "technologies": [
         {
@@ -342,6 +349,7 @@
     },
     {
       "name": "QuickStart Flutter Login & Registration App",
+      "image": "quick-login-logo.png",
       "description": "QuickStart is a nicely designed and developed multi purpose mobile application with Login & Registration as built-in modules. Flutter is an open-source mobile application development SDK created by Google and used to develop applications for Android and iOS.",
       "technologies": [
         {
@@ -362,6 +370,7 @@
     },
     {
       "name": "QuickStart UI Kit for eCommerce",
+      "image": "quick-ecom-logo.png",
       "description": "QuickStart is the ultimate library of Flutter UI app templates composed of the best quality UI kit for mobile app developers (Android and iOS primarily). The bundle consists of app UI kits, full apps, and UI themes. This Flutter UI kit comes with dark and light mode. QuickStart flutter UI Kit is perfect for businesses like eCommerce store apps like clothes, grocery, electronics, Pet Care, Medicines, Jewellery, fashion accessories, and much more. QuickStart has a number of stunning ready-to-use widgets like scale transition and floating action buttons. Our QuickStart Flutter UI kit has built-in elements and styles based on Material Design Guidelines. Develop your stand-alone application with a neat and clean single code base for various platforms like Android, iOS & Web.",
       "technologies": [
         {
@@ -382,6 +391,7 @@
     },
     {
       "name": "Flutter Settings Screen",
+      "image": "pub-logo.png",
       "description": "This is a simple flutter plugin for easily creating app settings screens. The unique thing about this library is that it is not dependent upon any specific storage library used to store settings.",
       "technologies": [
         {
@@ -402,6 +412,7 @@
     },
     {
       "name": "To-discord",
+      "image": "to-discord-logo.png",
       "description": "To discord allows you to share all type of contents to added Discord channels directly from your browser tab. You can share contents like, Hyper links, embedded media, selected text or even the current tab's url.",
       "technologies": [
         {
