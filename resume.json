@@ -290,6 +290,26 @@
       "link": "https://investarindia.com/"
     },
     {
+      "name": "Freelance Earnings Calculator",
+      "description": "A React-based web application to help freelancers calculate their net earnings after fees and currency conversion.",
+      "image": "fec-logo.png",
+      "technologies": [
+        {
+          "name": "React",
+          "description": "Crafting responsive and dynamic frontend interfaces.",
+          "level": "8/10"
+        }
+      ],
+      "platforms": [
+        {
+          "name": "Web",
+          "type": "web",
+          "url": "https://fec.harshjoshi.dev/"
+        }
+      ],
+      "link": "https://fec.harshjoshi.dev/"
+    },
+    {
       "name": "Equity Crowdfunding",
       "image": "equity-logo.png",
       "description": "Mobile platform for securities-based crowdfunding • Investor stake management",
