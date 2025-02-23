@@ -392,7 +392,7 @@
     {
       "name": "Flutter Settings Screen",
       "image": "pub-logo.png",
-      "description": "This is a simple flutter plugin for easily creating app settings screens. The unique thing about this library is that it is not dependent upon any specific storage library used to store settings.",
+      "description": "Plug-and-play settings UI • Storage-agnostic",
       "technologies": [
         {
           "name": "Flutter",
@@ -413,7 +413,7 @@
     {
       "name": "To-discord",
       "image": "to-discord-logo.png",
-      "description": "To discord allows you to share all type of contents to added Discord channels directly from your browser tab. You can share contents like, Hyper links, embedded media, selected text or even the current tab's url.",
+      "description": "Browser extension • Share links/text/media to Discord.",
       "technologies": [
         {
           "name": "Javascript",
