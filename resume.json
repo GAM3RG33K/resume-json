@@ -16,6 +16,11 @@
     ],
     "profiles": [
       {
+        "network": "Cal.com",
+        "username": "harshjoshi",
+        "url": "https://cal.com/harshjoshi"
+      },
+      {
         "network": "X/Twitter",
         "username": "decent_geek",
         "url": "https://x.com/decent_geek"
