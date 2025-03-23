@@ -187,13 +187,13 @@
           "url": "https://exch.harshjoshi.dev/"
         },
         {
-          "name": "Android (Beta)",
+          "name": "Android",
           "type": "android",
-          "url": "https://appdistribution.firebase.dev/i/dc114225c438ddb5/"
+          "url": "https://play.google.com/store/apps/details?id=dev.harshjoshi.exch_app"
         }
       ],
       "downloads": "",
-      "link": "https://exch.harshjoshi.dev/",
+      "link": "https://exch.harshjoshi.dev/landing",
       "notes": "Mobile version built with Flutter is in beta testing stage."
     },
     {
