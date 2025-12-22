@@ -166,7 +166,7 @@
   "apps": [
     {
       "name": "Meme'd - Clipping App",
-      "description": "Meme'd - A clipping platform where creators can earn rewards by posting brand-approved content. \nIt is built for meme pages, hype pages, podcast handles, music handles, clip accounts and all pages who wish to earn without appearing on camera. \nCreators receive structured payouts through a clear, performance milestone system. ",
+      "description": "Meme'd - A clipping platform where creators can earn rewards by posting brand-approved content.",
       "image": "memed-logo.png",
       "technologies": [
         {
