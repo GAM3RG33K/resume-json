@@ -165,6 +165,79 @@
   ],
   "apps": [
     {
+      "name": "Meme'd - Clipping App",
+      "description": "India's First Clip & Earn App",
+      "image": "memed-logo.png",
+      "technologies": [
+        {
+          "name": "Flutter",
+          "description": "Expert in building cross-platform mobile applications with native integrations.",
+          "level": "9/10"
+        },
+        {
+          "name": "React",
+          "description": "Crafting responsive and dynamic frontend interfaces.",
+          "level": "8/10"
+        },
+        {
+          "name": "NodeJS",
+          "description": "Building scalable server-side applications and APIs.",
+          "level": "9/10"
+        }
+      ],
+      "platforms": [
+        {
+          "name": "Android",
+          "type": "android",
+          "url": "https://play.google.com/store/apps/details?id=in.memed.app&hl=en-US"
+        },
+        {
+          "name": "iOS",
+          "type": "ios",
+          "url": "https://apps.apple.com/in/app/solo-for-creators/id6755515062"
+        },
+        {
+          "name": "Web",
+          "type": "web",
+          "url": "https://memed.in/dl-alt"
+        }
+      ],
+      "downloads": "10k+",
+      "link": "https://play.google.com/store/apps/details?id=in.memed.app&hl=en-US"
+    },
+    {
+      "name": "Artflow - An AI gallary and wallpaper app",
+      "description": "Discover thousands of stunning AI wallpapers from Civitai. Swipe, filter, and instantly set beautiful AI art as your device background.",
+      "image": "artflow-logo.png",
+      "technologies": [
+        {
+          "name": "Flutter",
+          "description": "Expert in building cross-platform mobile applications with native integrations.",
+          "level": "9/10"
+        },
+        {
+          "name": "NextJs",
+          "description": "Developing modern, SEO-friendly web applications.",
+          "level": "8/10"
+        }
+      ],
+      "platforms": [
+        {
+          "name": "Web",
+          "type": "web",
+          "url": "https://artflow.harshjoshi.dev/"
+        },
+        {
+          "name": "Android",
+          "type": "android",
+          "url": "https://artflow.harshjoshi.dev/"
+        }
+      ],
+      "downloads": "",
+      "link": "https://artflow.harshjoshi.dev/",
+      "notes": "Mobile version built with Flutter."
+    },
+    {
       "name": "Exch - Currency Converter",
       "description": "Real-time rates for 150+ currencies • Clean minimalist interface • Offline mode",
       "image": "exch-logo.png",
@@ -194,7 +267,7 @@
       ],
       "downloads": "",
       "link": "https://exch.harshjoshi.dev/landing",
-      "notes": "Mobile version built with Flutter is in beta testing stage."
+      "notes": "Mobile version built with Flutter."
     },
     {
       "name": "Fortime Timer",
@@ -281,7 +354,7 @@
       ],
       "platforms": [
         {
-          "name": "Android",
+          "name": "Android (discontinued)",
           "type": "android",
           "url": "https://play.google.com/store/apps/details?id=org.InvestarMobile.androidapp"
         },
@@ -357,7 +430,7 @@
       "link": "https://play.google.com/store/apps/details?id=com.rockersinfo.equity_real_estate"
     },
     {
-      "name": "AfroMoya Check-In App",
+      "name": "AfroMoya Check-In App (Germany Only)",
       "image": "afromoya-logo.png",
       "description": "Event ticket validation system • Multi-device sync • Prevents duplicate entries",
       "technologies": [
@@ -469,6 +542,12 @@
   ],
   "testimonials": [
     {
+      "name": "Jayant S.",
+      "project": "imagined inc.",
+      "review": "Harsh is one of the most talented and dedicated developers I’ve worked with. It goes without saying that he is an exceptional mobile developer, but being a mobile developer he has not limited himself to it. He is always curious and willing to explore new technologies. He joined us as a mobile developer, but has worked with us on backand and frontend technologies as well as mobile. Harsh is a fantastic team player - collaborative, communicative, and always ready to lend a helping hand.",
+      "link": "https://www.linkedin.com/in/harshvardhan-joshi/details/recommendations"
+    },
+    {
       "name": "Donn F.",
       "project": "Fortime Timer",
       "review": "If you're looking for a Flutter dev for a project you're working on, I highly recommend Harshvardhan Joshi 💯.\nHe did a fantastic job with me on a timer app I recently released in beta (knurlfitness.com). He's very knowledgable about Flutter, he's very responsive, & attentive to detail. I really enjoyed working with him on this project. If you need some Flutter/etc help, hit him up. 🚀",
@@ -478,12 +557,6 @@
       "name": "Kalpesh K.",
       "project": "Investar India (Mobile App)",
       "review": "Harshvardhan is the first person I reach out to if I want to have some deep technical discussions, this guy is always up to date with cutting-edge tech. \nHis standard of work is so high that it always keeps me inspired. Harsh is definitely the must-have asset especially when the project being built has some deep research involved. \nWe have worked for a long time in the same team and I consider myself privileged that I got to work with him, being in the same team made my learning really quick. \nAs a leader too Harsh is really good and his juniors have learned a lot from him. I would definitely want to work with him again. Good luck Man, keep rocking!! :)",
-      "link": "https://www.linkedin.com/in/harshvardhan-joshi/details/recommendations"
-    },
-    {
-      "name": "Jayant S.",
-      "project": "imagined inc.",
-      "review": "Harsh is one of the most talented and dedicated developers I’ve worked with. It goes without saying that he is an exceptional mobile developer, but being a mobile developer he has not limited himself to it. He is always curious and willing to explore new technologies. He joined us as a mobile developer, but has worked with us on backand and frontend technologies as well as mobile. Harsh is a fantastic team player - collaborative, communicative, and always ready to lend a helping hand.",
       "link": "https://www.linkedin.com/in/harshvardhan-joshi/details/recommendations"
     },
     {
