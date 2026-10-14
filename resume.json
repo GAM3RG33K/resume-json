@@ -1,11 +1,11 @@
 {
   "basics": {
     "name": "Harshvardhan Joshi",
-    "label": "Mobile App Developer & Full Stack Developer",
+    "label": "Senior Full-Stack + AI Engineer",
     "email": "contact@harshjoshi.dev",
     "phone": "+91 9106975161",
     "career_start_year": 2017,
-    "location": "Vadodara, India",
+    "location": "Bengaluru, India",
     "url": "https://harshjoshi.dev/",
     "picture": "https://drive.google.com/u/0/drive-viewer/AKGpihaK5jw7insFXI-Wf0qgaEF8ntBU5BRHBLdTGIUIAQD4uMwErVfM7Eeppce2bfMHQ8cJy98nS-2TZ8SZRxAmXUAMr6QnMpoRFX8=s2560",
     "customFields": [
@@ -46,8 +46,8 @@
         "url": "https://www.instagram.com/harshjoshi.dev/"
       }
     ],
-    "summary": "Crafting exceptional mobile and web experiences with Flutter, NextJs, and React. Over 8+ years of experience delivering high-quality, performant apps on multiple platforms. Passionate about continuous learning and open source contributions.",
-    "headline": "Full Stack Developer | Flutter Expert | Active Open Source Contributor"
+    "summary": "Building mobile and web products end to end with Flutter, React Native, Next.js and Node.js. Over 9+ years of experience shipping high-quality, performant apps across platforms, with apps crossing 350k+ downloads. Passionate about AI-powered features, continuous learning and open source.",
+    "headline": "Senior Full-Stack + AI Engineer | Flutter, React Native, Next.js, Node.js | Apps with 350k+ downloads"
   },
   "skills": [
     {
@@ -165,6 +165,37 @@
   ],
   "apps": [
     {
+      "name": "Tatva - News & Articles",
+      "description": "Tatva - A news and article app with comments, likes, saved posts, badges and push notifications, built from the ground up to its first release in ~185 days.",
+      "image": "tatva-logo.png",
+      "technologies": [
+        {
+          "name": "React Native",
+          "description": "Building cross-platform mobile apps with a shared TypeScript codebase.",
+          "level": "9/10"
+        },
+        {
+          "name": "NodeJS",
+          "description": "Building scalable server-side applications and APIs.",
+          "level": "9/10"
+        }
+      ],
+      "platforms": [
+        {
+          "name": "Android",
+          "type": "android",
+          "url": "https://play.google.com/store/apps/details?id=in.thetatva.tatva&hl=en-US"
+        },
+        {
+          "name": "iOS",
+          "type": "ios",
+          "url": "https://apps.apple.com/in/app/the-tatva/id6754087957"
+        }
+      ],
+      "downloads": "100k+",
+      "link": "https://play.google.com/store/apps/details?id=in.thetatva.tatva&hl=en-US"
+    },
+    {
       "name": "Meme'd - Clipping App",
       "description": "Meme'd - A clipping platform where creators can earn rewards by posting brand-approved content.",
       "image": "memed-logo.png",
@@ -194,7 +225,7 @@
         {
           "name": "iOS",
           "type": "ios",
-          "url": "https://apps.apple.com/in/app/solo-for-creators/id6755515062"
+          "url": "https://apps.apple.com/in/app/memed-clipping-app/id6755515062"
         },
         {
           "name": "Web",
@@ -202,7 +233,7 @@
           "url": "https://memed.in/dl-alt"
         }
       ],
-      "downloads": "10k+",
+      "downloads": "100k+",
       "link": "https://play.google.com/store/apps/details?id=in.memed.app&hl=en-US"
     },
     {
@@ -333,7 +364,7 @@
           "url": "https://solocreators.app/"
         }
       ],
-      "downloads": "10k+",
+      "downloads": "50k+",
       "link": "https://play.google.com/store/apps/details?id=app.solocreators.solo&hl=en-US"
     },
     {
@@ -612,20 +643,28 @@
   ],
   "experience": [
     {
-      "company": "harshjoshi.dev",
-      "position": "Freelance Full Stack Developer",
-      "location": "Vadodara",
-      "date": "May 2024 - Present",
-      "summary": "Working on my own app, Exch - Currency Converter, as well as enhancing the Fortime Timer app and collaborating on various projects for Imagined Studios as a freelance full-stack developer.",
-      "url": "https://harshjoshi.dev/"
+      "company": "Imagined Studios",
+      "position": "Software Development Engineer - II (promoted from Mobile Developer)",
+      "location": "Bengaluru (Remote)",
+      "date": "June 2025 - Present",
+      "summary": "Full-stack engineer specializing in mobile, building consumer apps from the first commit to the Play Store and App Store. Built the Tatva news app in React Native from the ground up to its first production release in ~185 days (now 100k+ downloads), helped release the Meme'd clipping app in Flutter in ~15 days (now 100k+ downloads), and continued shipping features for Solo for Creators (50k+ downloads), plus other client products using Next.js, Node.js and Spring Boot.",
+      "url": "https://imagined.studio"
     },
     {
       "company": "Imagined Studios",
-      "position": "Flutter Developer (Contract)",
-      "location": "Bengaluru",
-      "date": "November 2022 - Present",
-      "summary": "Working on the Solo for Creators Flutter app and revamping the internal recruitment job board using NextJs. Collaborating closely with cross-functional teams to deliver scalable solutions.",
+      "position": "Flutter Developer (Freelance)",
+      "location": "Remote",
+      "date": "November 2024 - September 2025",
+      "summary": "Improved and delivered 50+ features for the Solo for Creators Flutter app, plus UI/UX upgrades to improve retention. Built MVPs for OddJobs (job referral portal, Next.js) and Vibe Diary (AI journaling app, Flutter, Node.js and Gemini).",
       "url": "https://imagined.studio"
+    },
+    {
+      "company": "harshjoshi.dev",
+      "position": "Freelance Full Stack Developer",
+      "location": "Remote",
+      "date": "May 2024 - Present",
+      "summary": "Independent freelance projects via Upwork, including the Fortime Timer HIIT/WOD workout app in Flutter with a custom brand style, released on Google Play and the App Store with GitHub Actions builds. Also building my own apps, such as Exch - Currency Converter.",
+      "url": "https://harshjoshi.dev/"
     },
     {
       "company": "Signzy Technologies",
